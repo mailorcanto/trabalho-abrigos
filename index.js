@@ -6,7 +6,7 @@ function menu(){
     var opcao = Number(prompt(`===== ABRIGOS TEMPORÁRIOS =====
     1. Cadastrar abrigo
     2. Listar abrigos
-    3. Procurar abrigo
+    3. Procurar abrigos
     4. Sair
     Escolha uma opção:`))
     switch (opcao){
