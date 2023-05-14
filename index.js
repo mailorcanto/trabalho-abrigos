@@ -1,5 +1,7 @@
 //TRABALHO ABRIGOS
 
+//obs: abrir console no navegador antes de acessar index.html
+
 function menu(){    
     var opcao = Number(prompt(`===== ABRIGOS TEMPORÁRIOS =====
     1. Cadastrar abrigo
@@ -110,7 +112,7 @@ function cadastrarAbrigo (){
     }
 }
 
-function listarAbrigos(){
+function listarAbrigos(){ //usando console.log para exibir informações, caixa de prompt do navegador é muito pequena
     console.log(`código | nome | endereço | telefone | capacidade | cidade`)
     for (i = 0; i < arrayAbrigos.length; i++){
     console.log(`${i} | ${arrayAbrigos[i].nome} | ${arrayAbrigos[i].endereco} | ${arrayAbrigos[i].telefone} | ${arrayAbrigos[i].capacidade} | ${arrayAbrigos[i].cidade}
@@ -119,7 +121,7 @@ function listarAbrigos(){
     menu();
 }
 
-function procurarAbrigos(){
+function procurarAbrigos(){ //usando console.log para exibir informações, caixa de prompt do navegador é muito pequena
     cidade = prompt('Em que cidade você está?');
 
     for (i = 0; i < arrayAbrigos.length ; i++){
