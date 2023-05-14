@@ -123,10 +123,9 @@ function listarAbrigos(){ //usando console.log para exibir informações, caixa 
 
 function procurarAbrigos(){ //usando console.log para exibir informações, caixa de prompt do navegador é muito pequena
     cidade = prompt('Em que cidade você está?');
-
+    console.log(`código | nome | endereço | telefone | capacidade | cidade`)
     for (i = 0; i < arrayAbrigos.length ; i++){
         if (arrayAbrigos[i].cidade == cidade){
-            console.log(`código | nome | endereço | telefone | capacidade | cidade`)
             console.log(`${i} | ${arrayAbrigos[i].nome} | ${arrayAbrigos[i].endereco} | ${arrayAbrigos[i].telefone} | ${arrayAbrigos[i].capacidade} | ${arrayAbrigos[i].cidade}`)
         }
     }
