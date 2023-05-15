@@ -129,7 +129,7 @@ function procurarAbrigos(){ //usando console.log para exibir informações, caix
             console.log(`${i} | ${arrayAbrigos[i].nome} | ${arrayAbrigos[i].endereco} | ${arrayAbrigos[i].telefone} | ${arrayAbrigos[i].capacidade} | ${arrayAbrigos[i].cidade}`)
         }
     }
-menu();
+    menu();
 }
 
 menu();
