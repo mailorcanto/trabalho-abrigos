@@ -2,6 +2,11 @@
 
 //obs: abrir console no navegador antes de acessar index.html
 
+//Olá! Você foi contratado para desenvolver um programa em Javascript que ajude a população em situação de rua a encontrar abrigos temporários em 
+//dias frios. O programa deve utilizar o comando "prompt" para receber dados de entrada dos usuários.
+//O programa deve permitir que o usuário encontre um abrigo temporário na sua cidade, informando a sua localização. Para isso, deve ser criado um 
+//banco de dados com informações dos abrigos disponíveis no estado, como nome, endereço, cidade, telefone e capacidade de lotação.
+//O programa deve ter um menu com as seguintes opções:
 function menu(){    
     var opcao = Number(prompt(`===== ABRIGOS TEMPORÁRIOS =====
     1. Cadastrar abrigo
@@ -67,6 +72,8 @@ var abrigo4 = {
 
 var arrayAbrigos =[abrigo0,abrigo1,abrigo2,abrigo3,abrigo4];
 
+//1. Cadastro de Abrigo: essa opção permite cadastrar um novo abrigo no sistema. O programa deve solicitar o nome, endereço, telefone e capacidade 
+//de lotação do abrigo. Os dados devem ser armazenados em um objeto e este objeto deve ser incluído em um array de abrigos.
 function cadastrarAbrigo (){
     var nome = prompt('Informe nome do abrigo');
     var endereco = prompt ('Informe endereço do abrigo');
@@ -112,6 +119,8 @@ function cadastrarAbrigo (){
     }
 }
 
+//2. Listar Abrigos: essa opção lista todos os abrigos cadastrados no sistema, mostrando seus códigos, nomes, endereços, telefones e capacidade de 
+//lotação. O código é sempre a posição do objeto no array.
 function listarAbrigos(){ //usando console.log para exibir informações, caixa de prompt do navegador é muito pequena
     console.log(`código | nome | endereço | telefone | capacidade | cidade`)
     for (i = 0; i < arrayAbrigos.length; i++){
@@ -121,6 +130,9 @@ function listarAbrigos(){ //usando console.log para exibir informações, caixa 
     menu();
 }
 
+//3. Procurar Abrigo: essa opção permite que o usuário encontre um abrigo temporário na sua cidade, informando a sua localização. O programa deve 
+//perguntar ao usuário a sua cidade e mostrar todos os abrigos cadastrados naquela cidade, com suas informações completas, além de informar a 
+//disponibilidade de vagas.
 function procurarAbrigos(){ //usando console.log para exibir informações, caixa de prompt do navegador é muito pequena
     cidade = prompt('Em que cidade você está?');
     console.log(`código | nome | endereço | telefone | capacidade | cidade`)
@@ -131,5 +143,7 @@ function procurarAbrigos(){ //usando console.log para exibir informações, caix
     }
     menu();
 }
+
+//4. Sair: o programa deve encerrar seu funcionamento.
 
 menu();
